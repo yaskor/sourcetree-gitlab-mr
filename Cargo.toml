@@ -1,0 +1,20 @@
+[package]
+name = "sourcetree-gitlab-mr"
+version = "0.0.1"
+build = "build.rs"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+rust-ini = "0.21.1"
+urlencoding = "2.1.0"
+
+[build-dependencies]
+winres = "0.1"
+
+[profile.release]
+strip = true
+opt-level = "s"
+lto = true
+codegen-units = 1
+panic = 'abort'
