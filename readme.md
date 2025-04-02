@@ -25,7 +25,6 @@ The reason for the port is to avoid requiring PHP/Composer.
 ## 🖥️ Requirements
 
 - Works only on **Windows**
-- Requires **Google Chrome** installed
 
 ---
 
